@@ -1,0 +1,8 @@
+FROM alpine:latest
+MAINTAINER "Shuji Yamada <s-yamada@arukas.io>"
+ENV ARUKAS_CLI_VERSION=0.1.0.beta-9
+ADD https://github.com/arukasio/cli/releases/download/${ARUKAS_CLI_VERSION}/arukas_${ARUKAS_CLI_VERSION}_linux_amd64.zip ./
+RUN unzip arukas_${ARUKAS_CLI_VERSION}_linux_amd64.zip && \
+    rm -f arukas_${ARUKAS_CLI_VERSION}_linux_amd64.zip && \
+    touch .env
+ENTRYPOINT ["/arukas"]
