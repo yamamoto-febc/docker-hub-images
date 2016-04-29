@@ -30,20 +30,36 @@ Commands:
   help [<command>...]
     Show help.
 
+
   ps [<flags>]
     Show status of containers
+
+    -a, --all    Show all containers (default shows just running)
+    -q, --quiet  Only display numeric IDs
 
   rm <container_id>
     Remove a container
 
+
   run --instances=INSTANCES --mem=MEM --ports=PORTS [<flags>] <image>
     Create and run a container. The container must run as a daemon.
+
+        --instances=INSTANCES  Number of instances
+        --mem=MEM              Memory size
+        --app-name=APP-NAME    The name of the app.
+        --name=NAME            The name of contiainer which must be unique
+        --cmd=CMD              Command to execute
+    -e, --envs=ENVS ...        Set environment variables. -e KEY=VALUE
+    -p, --ports=PORTS ...      Publish a container's port(s) to the internet. -p
+                               80:tcp
 
   start <container_id>
     Start one stopped container
 
+
   stop <container_id>
     Stop one running container
+
 
   version
     Print version information and quit
