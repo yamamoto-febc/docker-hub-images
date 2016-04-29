@@ -4,17 +4,25 @@ Arukas CLI
 The Arukas CLI is used to manage Arukas apps from the command line.
 * Website: https://arukas.io
 
-[![Circle CI](https://circleci.com/gh/arukasio/cli.svg?style=shield)](https://circleci.com/gh/arukasio/cli)
+[![Circle CI](https://circleci.com/gh/arukasio/cli.svg?style=shield)]
+(https://circleci.com/gh/arukasio/cli)
 
 ## Docker Image Layer
 
-* arukasio/arukas:latest [![](https://badge.imagelayers.io/arukasio/arukas:latest.svg)](https://imagelayers.io/?images=arukasio/arukas:latest 'Get your own badge on imagelayers.io')
-* arukasio/arukas:dev [![](https://badge.imagelayers.io/arukasio/arukas:dev.svg)](https://imagelayers.io/?images=arukasio/arukas:dev 'Get your own badge on imagelayers.io')
+* arukasio/arukas:latest [![](https://badge.imagelayers.io/arukasio/arukas:latest.svg)]
+(https://imagelayers.io/?images=arukasio/arukas:latest 'Get your own badge on imagelayers.io')
+
+* arukasio/arukas:dev [![](https://badge.imagelayers.io/arukasio/arukas:dev.svg)]
+(https://imagelayers.io/?images=arukasio/arukas:dev 'Get your own badge on imagelayers.io')
 
 ## QuickStart
 
+** Please note: Replaced by your arukas token and aruaks api secret is
+ `YOUR_API_TOKEN` and `YOUR_API_SECRET` **
+
 * Get API key here https://app.arukas.io/settings/api-keys
-* `docker run --rm -e ARUKAS_JSON_API_TOKEN=<YOUR_API_TOKEN> -e ARUKAS_JSON_API_SECRET=<YOUR_API_SECRET> arukasio/arukas`
+* `docker run --rm -e ARUKAS_JSON_API_TOKEN="YOUR_API_TOKEN"
+ -e ARUKAS_JSON_API_SECRET="YOUR_API_SECRET" arukasio/arukas`
 
 ## Help
 
