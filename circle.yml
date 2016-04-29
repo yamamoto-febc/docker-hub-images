@@ -1,0 +1,20 @@
+machine:
+  environment:
+    ARUKAS_JSON_API_SECRET: PASSWORD
+    ARUKAS_JSON_API_TOKEN: USER
+  services:
+    - docker
+
+dependencies:
+  cache_directories:
+    - "~/docker"
+  override:
+    - docker info
+    - if [[ -e ~/docker/image.tar ]]; then docker load --input ~/docker/image.tar; fi
+    - docker build -f cli/Dockerfile -t arukasio/arukas .
+    - mkdir -p ~/docker
+    - docker save arukasio/arukas > ~/docker/image.tar
+
+test:
+  override:
+    - docker run arukasio/arukas version
