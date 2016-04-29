@@ -1,7 +1,4 @@
 machine:
-  environment:
-    ARUKAS_JSON_API_SECRET: PASSWORD
-    ARUKAS_JSON_API_TOKEN: USER
   services:
     - docker
 
@@ -17,4 +14,4 @@ dependencies:
 
 test:
   override:
-    - docker run arukasio/arukas version
+    - docker run -e ARUKAS_JSON_API_SECRET="foo" -e ARUKAS_JSON_API_TOKEN="bar" arukasio/arukas version
