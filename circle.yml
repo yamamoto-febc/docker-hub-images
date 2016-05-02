@@ -15,3 +15,9 @@ dependencies:
 test:
   override:
     - docker run -e ARUKAS_JSON_API_SECRET="foo" -e ARUKAS_JSON_API_TOKEN="bar" arukasio/arukas version
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - ./scripts/deploy_production.sh arukasio/arukas master ${CIRCLE_TOKEN}
