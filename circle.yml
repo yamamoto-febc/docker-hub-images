@@ -20,4 +20,4 @@ deployment:
   production:
     branch: master
     commands:
-      - ./scripts/deploy_production.sh arukasio/arukas master ${CIRCLE_TOKEN}
+      - ./scripts/deploy_production.sh arukasio/arukas master ${HUB_TOKEN}
