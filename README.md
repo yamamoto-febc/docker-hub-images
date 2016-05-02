@@ -1,3 +1,5 @@
+[![Circle CI](https://circleci.com/gh/arukasio/docker-hub-images.svg?style=shield)](https://circleci.com/gh/arukasio/docker-hub-images)
+
 # arukasio/docker-hub-images
 
 ## What is Arukas
