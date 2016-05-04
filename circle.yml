@@ -14,7 +14,7 @@ dependencies:
 
 test:
   override:
-    - docker run -e ARUKAS_JSON_API_SECRET="foo" -e ARUKAS_JSON_API_TOKEN="bar" arukasio/arukas version
+    - docker run -e ARUKAS_JSON_API_TOKEN="foo" -e ARUKAS_JSON_API_SECRET="bar" arukasio/arukas version
 
 deployment:
   production:
