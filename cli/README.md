@@ -4,7 +4,7 @@ Arukas CLI
 [![Circle CI](https://circleci.com/gh/arukasio/cli.svg?style=shield)](https://circleci.com/gh/arukasio/cli)
 
 The Arukas CLI is used to manage Arukas apps from the command line.
-* Arukas Website: https://arukas.io/en
+* Arukas Website: [https://arukas.io/](https://arukas.io/en/)
 * Arukas CLI: https://github.com/arukasio/cli
 
 ## Docker Image Layer
