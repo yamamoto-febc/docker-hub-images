@@ -4,9 +4,11 @@
 
 ## What is Arukas
 
-[https://arukas.io/](https://arukas.io/)
+Arukas is the simplest-to-use Container-as-a-service that makes it easy to deploy and manage apps at scale.
 
-# Authors
+[https://arukas.io/](https://arukas.io/en/)
+
+## Authors
 
 * Shuji Yamada (<s-yamada@arukas.io>)
 
