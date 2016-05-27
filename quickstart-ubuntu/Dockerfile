@@ -9,11 +9,9 @@ ENV ROOT_PWD default
 ENV AUTHORIZED_KEY none
 
 # Install openssh-server, and then clean up
-RUN apt-get update -q && \
-    apt-get install -y -qq  openssh-server && \
-    apt-get clean && \
-    apt-get autoclean && \
-    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+RUN apt-get update && apt-get install -y
+      openssh-server \
+    && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p /var/run/sshd
 
