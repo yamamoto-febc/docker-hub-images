@@ -11,6 +11,7 @@ Arukas is the simplest-to-use Container-as-a-service that makes it easy to deplo
 ## Authors
 
 * Shuji Yamada (<s-yamada@arukas.io>)
+* Toshiki Inami (<t-inami@arukas.io>)
 
 ## License
 
