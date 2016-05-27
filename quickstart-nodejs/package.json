@@ -1,0 +1,13 @@
+{
+  "name": "quickstart-nodejs",
+  "version": "1.0.0",
+  "description": "Getting start in Arukas wih Node.js",
+  "author": "Toshiki Inami<t-inami@arukas.io>",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
