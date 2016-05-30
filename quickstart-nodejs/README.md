@@ -4,7 +4,7 @@ A simple Node.js app ( using [Express.js](http://expressjs.com/): Fast, unopinio
 ## Running locally
 
 ```
-$ git clone git@github.com:peco8/quickstart-nodejs.git
+$ git clone git@github.com:arukasio/docker-hub-images.git
 $ cd quickstart-nodejs
 $ docker build --no-cache --tag quickstart-nodejs .
 $ docker run -d -p 3000:3000 quickstart-nodejs
@@ -27,7 +27,7 @@ $ docker run --rm -e ARUKAS_JSON_API_TOKEN=<APIT_TOKEN> \
                   -e ARUKAS_JSON_API_SECRET=<SECRET_KEY> \
                     arukasio/arukas run --instances=1 \
                                         --mem=512 \
-                                        --ports=3000:tcp peco8/quickstart-nodejs
+                                        --ports=3000:tcp arukasio/quickstart-nodejs
 ```
 ## Authors
 
@@ -37,4 +37,4 @@ $ docker run --rm -e ARUKAS_JSON_API_TOKEN=<APIT_TOKEN> \
 
 This project is licensed under the terms of the MIT license.
 
-**Continue with this tutorial [here](/).**
+**Continue with this tutorial [here](https://test.arukas.io/tutorials/tutorials-nodejs/).**

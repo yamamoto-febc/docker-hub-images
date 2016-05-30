@@ -4,8 +4,8 @@ A simple PHP app ( using [Sim](http://www.slimframework.com/): a PHP micro frame
 ## Running locally
 
 ```
-$ git clone git@github.com:peco8/quickstart-php.git
-$ cd quickstart-php
+$ git clone git@github.com:arukasio/docker-hub-images.git
+$ cd docker-hub-images/quickstart-php
 $ docker build --no-cache --tag quickstart-php .
 $ docker run -d -p 80:80 quickstart-php
 ```
@@ -27,7 +27,7 @@ $ docker run --rm -e ARUKAS_JSON_API_TOKEN=<APIT_TOKEN> \
                   -e ARUKAS_JSON_API_SECRET=<SECRET_KEY> \
                     arukasio/arukas run --instances=1 \
                                         --mem=512 \
-                                        --ports=80:tcp peco8/quickstart-php
+                                        --ports=80:tcp arukasio/quickstart-php
 ```
 ## Authors
 
@@ -37,4 +37,4 @@ $ docker run --rm -e ARUKAS_JSON_API_TOKEN=<APIT_TOKEN> \
 
 This project is licensed under the terms of the MIT license.
 
-**Continue with this tutorial [here](/).**
+**Continue with this tutorial [here](https://test.arukas.io/tutorials/tutorials-php/).**
