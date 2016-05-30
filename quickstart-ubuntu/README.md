@@ -5,9 +5,9 @@ Getting start in Arukas wih Ubuntu
 
 ##### Public key authentication
 ```
-$ git clone git@github.com:peco8/quickstart-ubuntu.git
-$ cd quickstart-ubuntu
-$ docker build --no-cache --tag quickstart-ubuntu . 
+$ git clone git@github.com:arukasio/docker-hub-images.git
+$ cd docker-hub-images/quickstart-ubuntu
+$ docker build --no-cache --tag quickstart-ubuntu .
 $ docker run -d -e AUTHORIZED_KEY="`cat ~/.ssh/id_rsa.pub`" -P quickstart-ubuntu
 ```
 
@@ -15,7 +15,7 @@ $ docker run -d -e AUTHORIZED_KEY="`cat ~/.ssh/id_rsa.pub`" -P quickstart-ubuntu
 If you want to use your original password instead of the default one: "root", you can
 set the environment variable ROOT_PWD to your specific password when running the container:
 ```
-$ git clone git@github.com:peco8/quickstart-ubuntu.git
+$ git clone git@github.com:arukasio/quickstart-ubuntu.git
 $ cd quickstart-ubuntu
 $ docker build --no-cache --tag quickstart-ubuntu .
 $ docker run -d -e ROOT_PWD="ubuntu" -P quickstart-ubuntu
@@ -35,7 +35,7 @@ $ docker run --rm -e ARUKAS_JSON_API_TOKEN=<APIT_TOKEN> \
                     arukasio/arukas run --instances=1 \
                                         --mem=512 \
                                         --envs AUTHORIZED_KEY="`cat ~/.ssh/id_rsa.pub`" \
-                                        --ports=22:tcp peco8/quickstart-ubuntu
+                                        --ports=22:tcp arukasio/quickstart-ubuntu
 ```
 ##### username/password
 ```
@@ -43,7 +43,7 @@ $ docker run --rm -e ARUKAS_JSON_API_TOKEN=<APIT_TOKEN> \
                   -e ARUKAS_JSON_API_SECRET=<SECRET_KEY> \
                     arukasio/arukas run --instances=1 \
                                         --mem=512 \
-                                        --ports=22:tcp peco8/quickstart-ubuntu
+                                        --ports=22:tcp arukasio/quickstart-ubuntu
 ```
 
 ## Authors
@@ -54,4 +54,4 @@ $ docker run --rm -e ARUKAS_JSON_API_TOKEN=<APIT_TOKEN> \
 
 This project is licensed under the terms of the MIT license.
 
-**Continue with this tutorial [here](/).**
+**Continue with this tutorial [here](https://test.arukas.io/tutorials/tutorials-ubuntu/).**
