@@ -13,7 +13,7 @@ $ docker run -d -p 80:80 quickstart-php
 Your app should now be running:
 
 ```
-$ curl 192.168.59.103:80/hello/Arukas
+$ curl 192.168.59.103:80/hello/world
 Hello world
 ```
 
