@@ -37,4 +37,4 @@ $ docker run --rm -e ARUKAS_JSON_API_TOKEN=<APIT_TOKEN> \
 
 This project is licensed under the terms of the MIT license.
 
-**Continue with this tutorial [here](https://test.arukas.io/tutorials/tutorials-nodejs/).**
+**Continue with this tutorial [here](https://arukas.io/tutorials/tutorials-nodejs/).**
