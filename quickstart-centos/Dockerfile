@@ -1,7 +1,7 @@
 # Using official ubuntu runtime base image
 FROM centos:centos7
 
-MAINTAINER "Toshiki Inami <t-inami@arukas.io>"
+MAINTAINER "Kazumichi Yamamoto <yamamoto.febc@gmail.com>"
 
 # Set username/password login as a default
 # public authentication will be enabled with AUTHORIZED_KEY ENV
@@ -13,6 +13,7 @@ ENV AUTHORIZED_KEY none
 # Configure sshd.conf
 # Then cleanup
 RUN yum -y install openssh openssh-clients openssh-server && \
+    yum -y install httpd httpd-devel && \
     ssh-keygen -q -N "" -t rsa -f /etc/ssh/ssh_host_rsa_key  && \
     ssh-keygen -q -N "" -t dsa -f /etc/ssh/ssh_host_dsa_key && \
     ssh-keygen -q -N "" -t ecdsa -f /etc/ssh/ssh_host_ecdsa_key && \
@@ -29,7 +30,7 @@ COPY start.sh /start.sh
 RUN chmod +x /start.sh
 
 # Expose 22 for SSH access
-EXPOSE 22
+EXPOSE 22 80
 
 # Start supervisord to controll processes
 CMD ["./start.sh", "-bash"]
